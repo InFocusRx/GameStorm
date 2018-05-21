@@ -48,9 +48,11 @@ footer a:hover{
 	color: white;
 	height: 200px;
 }
-.xx{
+.StoreInfo{
 	background-color: aqua;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
-.second-floor-img{
-	margin-bottom: 15px;
+.first-section-end{
+	margin-bottom: 6%;
 }
