@@ -1,0 +1,55 @@
+.navbar-header{
+	background-color: black;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+
+.navbar-header a{
+	color: white;
+}
+.navbar-icons a:hover{
+	color: #FFDF01;
+}
+
+.navbar-icons i{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.right-header{
+	color: white;
+}
+
+.footer-links, .footer-links a{
+	color: white;
+	background-color: #232323;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.mb-4{
+	margin-bottom: 0rem!important;
+}
+.footer-copyright{
+	color: white;
+}
+footer a:hover{
+	color: #FFDF01;
+	text-decoration: none;
+}
+.cleartwoimages{
+	margin-bottom: 17px;
+}
+.s{
+	background-color: black;
+	color: white;
+	height: 300px;
+}
+.d{
+	background-color: black;
+	color: white;
+	height: 200px;
+}
+.xx{
+	background-color: aqua;
+}
