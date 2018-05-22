@@ -30,6 +30,7 @@
 
 .cover:hover .image {
   opacity: 0.3;
+  /*border: 6px solid black;*/
 }
 
 .cover:hover .middle {
@@ -48,9 +49,13 @@
   text-align: center;
   line-height: 50px;
 }
-.game-title{
-	width: %;
-	text-align: center;
+.img-text-bottom{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.img-thumbnail{
+  background-color: black;
 }
 /*-----------------------------------------
 .circle {
