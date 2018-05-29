@@ -30,18 +30,19 @@ $result = mysqli_query($conn, "SELECT name, img FROM products ORDER BY product_i
 					<div class="row">
 			        <?php 
 				        while($res = mysqli_fetch_array($result)) {
-				        echo "<div class='col-2 cover'>";
+				        echo "<div class='col-xl-2 col-md-4 col-sm-12 cover'>";
 				        echo "<img class='img-thumbnail image' src=" . $res['img'] . " >";
-				        echo "<a href='#'>
+
+				        echo "<a href=test.php?product_id=".$row['product_id'].">
+
 				            <div class='middle'>
 				            <div class='text'><i class='fas fa-search'></i></div>
 				            </div>			            
 				          	</a>";
-				        echo "<div class='img-text-bottom'>" .$res['name']."</div>";
+				        echo "<div class='img-text-bottom gamename'>" .$res['name']."</div>";
 				        echo "</div>";
 				                   
 				      
-				            
 				        }
 				        ?>	
 					</div>					
@@ -52,6 +53,7 @@ $result = mysqli_query($conn, "SELECT name, img FROM products ORDER BY product_i
 
 		</main>
 		
+		<?php require_once("templates/footer.php"); ?>		
 	</body>
 </html>
 
