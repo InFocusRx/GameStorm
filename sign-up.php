@@ -1,3 +1,7 @@
+<?php 
+require_once('php/functions.php'); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,27 +17,34 @@
 </head>
 <body>
     <div class="login-form">
-        <form action="/examples/actions/confirmation.php" method="post">
+        <form action="sign-up.php" method="post">
             <a href="index.php"><i class="fas fa-home" style="color: black; font-size: 18px;"></i></a>
             <h2 class="text-center">Sign Up</h2>   
 
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username" required="required">
+                <input type="text" class="form-control" placeholder="Username" name="username" required="required">
             </div>
 
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" required="required">
+                <input type="email" class="form-control" placeholder="Email" name="email" required="required">
             </div>
 
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" required="required">
+                <input type="password" class="form-control" placeholder="Password" name="password_1" required="required">
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                <input type="password" class="form-control" placeholder="Repeat password" name="password_2" required="required">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" name="register_btn">Sign Up</button>
             </div>
       
         </form>
+
+        <?php echo display_error(); ?>
+
         <p class="text-center"><a href="login.php">Already Have an Account? Log In!</a></p>
     </div>
 </body>

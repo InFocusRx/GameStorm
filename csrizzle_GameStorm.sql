@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 29, 2018 at 08:16 PM
+-- Generation Time: May 29, 2018 at 11:40 PM
 -- Server version: 5.6.37
 -- PHP Version: 7.0.21
 
@@ -110,6 +110,29 @@ INSERT INTO `products` (`product_id`, `name`, `price`, `age_raiting`, `descripti
 (31, 'This Is the Police', 14, 8, 'Dive into a deep story of corruption, crime and intrigue. \r\nTake the role of gritty Police Chief Jack Boyd, \r\nand come face to face with the ugly underbelly of Freeburg, \r\na city spiraling the drain. Will Jack reach his retirement with a nice stack of bills, \r\nor will he end up broken ... or worse? \r\n\r\n\r\nManage your staff, respond to emergencies, and investigate crimes in a \r\ncity on the brink of chaos. The mafia underworld maneuvers behind the scenes, \r\nsinking their claws ever deeper into the city, even as the mayor is ready to exploit every \r\nsituation to his political advantage. ', '2016-08-02', '66', ''),
 (32, 'Tomb Raider', 19, 18, '\r\nHelp Lara Croft survive against incredible odds in Tomb Raider for PC download. \r\nExplore a vast, intricate and savage world, solve puzzles and defeat your enemies. \r\nUncover Lara\'s gritty and intense origin story as she is shipwrecked on a remote island \r\nfull of wild animals and dangerous scavengers. Armed only with raw instincts and the \r\nability to push beyond the limits of human endurance, she must fight to unravel the \r\ndark history of the forgotten island and escape its relentless hold. Experience Lara \r\nCroft\'s intense origin story from a young woman to a hardened survivor. \r\nOnly then will she be able to survive, save her friends and become a legend.', '2013-03-05', '86', '');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(32) NOT NULL,
+  `email` varchar(64) NOT NULL,
+  `user_type` varchar(10) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `email`, `user_type`, `password`) VALUES
+(1, 'InFocus', 'nikitarezvan@gmail.com', 'admin', 'a90f6a30864eb9328b83da5277f7df00'),
+(2, 'admin', 'nikitarezvan@gmail.com', 'admin', 'a90f6a30864eb9328b83da5277f7df00'),
+(3, 'user', 'nikitarezvan@gmail.com', 'admin', 'a90f6a30864eb9328b83da5277f7df00');
+
 --
 -- Indexes for dumped tables
 --
@@ -140,6 +163,12 @@ ALTER TABLE `products`
   ADD UNIQUE KEY `Product_ID` (`product_id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -162,7 +191,12 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Products ID', AUTO_INCREMENT=34;COMMIT;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Products ID', AUTO_INCREMENT=34;
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

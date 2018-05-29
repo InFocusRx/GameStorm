@@ -1,3 +1,5 @@
+<?php include('php/functions.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,20 +15,22 @@
 </head>
 <body>
     <div class="login-form">
-        <form action="/examples/actions/confirmation.php" method="post">
+        <form action="login.php" method="post">
+            <?php echo display_error(); ?>
+
             <a href="index.php"><i class="fas fa-home" style="color: black; font-size: 18px;"></i></a>
             <h2 class="text-center">Log in</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username" required="required">
+                <input type="text" class="form-control" placeholder="Username" name="username" required="required">
             </div>
 
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" required="required">
+                <input type="password" class="form-control" placeholder="Password" name="password" required="required">
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                <button type="submit" class="btn btn-primary btn-block" name="login_btn">Log in</button>
             </div>  
 
         </form>
