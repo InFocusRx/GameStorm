@@ -18,22 +18,6 @@
 	<body>
 		<?php require_once("templates/header.php"); ?>
 
-		<main>
-			<section class="second-menu">
-				<div class="container">
-					<div class="row menu">
-						<div class="col-2">GAMESTORE</div>
-						<div class="col-1 rev">Reviews</div>
-						<div class="col-1">Games</div>
-						<div class="col-1">FAQ</div>
-						<div class="col-4">Story</div>
-						<div class="col-1">Search</div>
-						<div class="col-1">Login</div>
-						<div class="col-1">Cart</div>
-					</div>
-				</div>
-			</section>
-
 			<hr>
 
 			<section>

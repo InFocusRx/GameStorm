@@ -54,3 +54,19 @@
 			</div>
 				
 		</header>
+
+		<main>
+			<section class="second-menu">
+				<div class="container">
+					<div class="row menu">
+						<div class="col-2"><a href="index.php">GAMESTORE</a></div>
+						<div class="col-1 rev">Reviews</div>
+						<div class="col-1"><a href="game-list.php">Games</a></div>
+						<div class="col-1">FAQ</div>
+						<div class="col-4">Story</div>
+						<div class="col-1">Search</div>
+						<div class="col-1"><a href="login.php">Login</a></div>
+						<div class="col-1">Cart</div>
+					</div>
+				</div>
+			</section>
