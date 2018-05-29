@@ -4,6 +4,10 @@
 	padding-top: 5px;
 }
 
+img{
+	border-radius: 5px;
+}
+
 .navbar-header a{
 	color: white;
 }
@@ -39,17 +43,15 @@ footer a:hover{
 	margin-bottom: 17px;
 }
 .s{
-	background-color: black;
-	color: white;
+	
 	height: 300px;
 }
 .d{
-	background-color: black;
-	color: white;
+	
 	height: 200px;
 }
 .StoreInfo{
-	background-color: aqua;
+	
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
