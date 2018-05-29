@@ -1,7 +1,7 @@
 <?php 
 require_once("php/database_connection.php"); 
 
-$result = mysqli_query($conn, "SELECT name, img FROM products ORDER BY product_id DESC");
+$result = mysqli_query($conn, "SELECT product_id, name, img FROM products ORDER BY product_id DESC");
 
 ?>
 
@@ -33,15 +33,14 @@ $result = mysqli_query($conn, "SELECT name, img FROM products ORDER BY product_i
 				        echo "<div class='col-xl-2 col-md-4 col-sm-12 cover'>";
 				        echo "<img class='img-thumbnail image' src=" . $res['img'] . " >";
 
-				        echo "<a href=test.php?product_id=".$row['product_id'].">
+				        echo '<a href="game.php?product_id='.$res['product_id'].'">
 
-				            <div class='middle'>
-				            <div class='text'><i class='fas fa-search'></i></div>
+				            <div class="middle">
+				            <div class="text"><i class="fas fa-search"></i></div>
 				            </div>			            
-				          	</a>";
+				          	</a>';
 				        echo "<div class='img-text-bottom gamename'>" .$res['name']."</div>";
-				        echo "</div>";
-				                   
+				        echo "</div>";          
 				      
 				        }
 				        ?>	
