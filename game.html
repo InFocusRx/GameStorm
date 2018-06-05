@@ -1,0 +1,246 @@
+<?php
+require_once("php/database_connection.php");  
+$query = "SELECT name, price, age_raiting, description, release_date, raiting, img FROM products WHERE product_id=".intval($_REQUEST['product_id']); 
+$result = mysqli_query($conn, $query)
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>GameStorm - Product</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/hamburger.css">
+		<link rel="stylesheet" href="css/game-list.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="game.css">
+	</head>
+	<body>
+
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#"><b style="color: orange;">GameStorm</b></a>
+			  <a href="#">About</a>
+			  <a href="#">Our Sites</a>
+			  <a href="#">Contact</a>
+				<br>
+			  <a href="#">Reviews</a>
+			  <a href="#">Games</a>
+			  <a href="#">FAQ</a>
+			  <a href="#">Story</a>
+				<br>
+			  <a href="#">Login</a>
+			  <a href="#">Search</a>
+			  	<br>
+
+			  	<table class="icons-mobile">
+			  		<tr>
+			  			<td><a href="#"><i class="fab fa-facebook-f"></i></a></td>
+			  			<td><a href="#"><i class="fab fa-vk"></i></a></td>
+			  			<td><a href="#"><i class="fab fa-instagram"></i></a></td>
+			  		</tr>
+					
+					<tr>
+						<td><a href="#"><i class="fab fa-google"></i></a></td>
+						<td><a href="#"><i class="fab fa-twitter"></i></a></td>
+						<td><a href="#"><i class="fab fa-github"></i></a></td>
+					</tr>
+			  	</table>
+
+			</div>
+
+			<div class="mobile-m">
+				<span class="hamburger" onclick="openNav()">OPEN</span>
+			</div>
+
+				
+		<header class="navbar-header">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-2 header-logo"><a href="#">GameStorm</a></div>
+					<div class="col-1"><a href="#"></a></div>
+					<div class="col-1"><a href="#"></a></div>
+					<div class="col-6"><a href="#"></a></div>
+					<div class="col-2 navbar-icons">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-vk"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+
+				</div>
+			</div>
+				
+		</header>
+
+		<main>
+			<section class="second-menu">
+				<div class="container">
+					<div class="row menu">
+						<div class="col-2"><a href="index.php">GAMESTORE</a></div>
+						<div class="col-1 rev">Reviews</div>
+						<div class="col-1"><a href="game-list.php">Games</a></div>
+						<div class="col-1">FAQ</div>
+						<div class="col-4">Story</div>
+						<div class="col-1">Search</div>
+						<div class="col-1"><a href="login.php">Login</a></div>
+						<div class="col-1">Cart</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="container game">
+
+				<div class="row">
+					<div class="col-4 cover">
+						<div class="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nulla officia ad praesentium modi, quaerat eaque voluptate, consequuntur ullam. Laborum amet saepe quidem voluptate. Sed laudantium repellat aliquam, pariatur et!</div>
+					</div>
+					<div class="col-6 game-info" style="background-color: yellow;">
+						<div class="row game-title">
+							<h3>Title</h3>
+						</div>
+						<div class="row game-price">
+							<h3>price</h3>
+						</div>
+						<div class="row game-age">
+							<h3>age</h3>
+						</div>
+						<div class="row game-rating">
+							<h3>rating</h3>
+						</div>
+						<div class="row game-releasedate">
+							<h3>releasedate</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row game-description">
+					<div class="col-1"></div>
+					<div class="col-6 game-description" style="background-color: blue;">
+						<h3>Description</h3>
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="page-footer font-small unique-color-dark pt-0">
+
+		    <!--Footer Links-->
+		    <div class="container-fluid mt-5 mb-4 text-center text-md-left footer-links">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+		        <div class="row mt-3">
+
+		            <!--First column-->
+		            <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+		                <h6 class="text-uppercase font-weight-bold">
+		                    <strong>Company name</strong>
+		                </h6>
+		                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut suscipit tempora ratione, unde facilis eos.</p>
+		            </div>
+		            <!--/.First column-->
+
+		            <!--Second column-->
+		            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+		                <h6 class="text-uppercase font-weight-bold">
+		                    <strong>Products</strong>
+		                </h6>
+		                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		                <p>
+		                    <a href="#!">MDBootstrap</a>
+		                </p>
+		                <p>
+		                    <a href="#!">MDWordPress</a>
+		                </p>
+		                <p>
+		                    <a href="#!">BrandFlow</a>
+		                </p>
+		                <p>
+		                    <a href="#!">Bootstrap Angular</a>
+		                </p>
+		            </div>
+		            <!--/.Second column-->
+
+		            <!--Third column-->
+		            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+		                <h6 class="text-uppercase font-weight-bold">
+		                    <strong>Useful links</strong>
+		                </h6>
+		                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		                <p>
+		                    <a href="#!">Your Account</a>
+		                </p>
+		                <p>
+		                    <a href="#!">Become an Affiliate</a>
+		                </p>
+		                <p>
+		                    <a href="#!">Shipping Rates</a>
+		                </p>
+		                <p>
+		                    <a href="#!">Help</a>
+		                </p>
+		            </div>
+		            <!--/.Third column-->
+
+		            <!--Fourth column-->
+		            <div class="col-md-4 col-lg-3 col-xl-3">
+		                <h6 class="text-uppercase font-weight-bold">
+		                    <strong>Contact</strong>
+		                </h6>
+		                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+		                <p>
+		                    <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+		                <p>
+		                    <i class="fa fa-envelope mr-3"></i>
+							<a href="mailto:nikitarezvan@gmail.com">nikitarezvan@gmail.com</a>
+		                </p>
+		                <p>
+		                    <i class="fa fa-phone mr-3"></i>
+							<a href="tel:37258415552">+ 372 58 415 5552</a>
+		                </p>
+		                <p>
+		                    <i class="fa fa-print mr-3"></i>
+							<a href="tel:37253640404">+ 372 53 640 0404</a>
+		                </p>
+		            </div>
+		            <!--/.Fourth column-->
+
+		        </div>					
+						</div>
+					</div>
+				</div>
+		    </div>
+
+		    <div class="footer-copyright py-3 text-center" style="background-color: #1A1A1A;">
+		        © 2018 Copyright:
+		        <a href="#">
+		            <b style="color: #FFDF01;"> gamestore.com</b>
+		        </a>
+		    </div>
+
+		    <div style="background-color: #232323; padding: 25px;"></div>
+		    <!--/.Copyright -->
+
+		</footer>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	</body>
+</html>
