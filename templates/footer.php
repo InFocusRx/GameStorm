@@ -1,4 +1,4 @@
-<footer class="page-footer font-small unique-color-dark pt-0">
+    <footer class="page-footer font-small unique-color-dark pt-0">
 
     <!--Footer Links-->
     <div class="container-fluid mt-5 mb-4 text-center text-md-left footer-links">
@@ -13,7 +13,7 @@
                     <strong>Company name</strong>
                 </h6>
                 <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut suscipit tempora ratione, unde facilis eos.</p>
+                
             </div>
             <!--/.First column-->
 
@@ -93,9 +93,13 @@
         <a href="#">
             <b style="color: #FFDF01;"> gamestore.com</b>
         </a>
+
     </div>
 
-    <div style="background-color: #232323; padding: 25px;"></div>
-    <!--/.Copyright -->
+    <div style="background-color: #232323; padding: 25px; text-align: center;">
+    </div>
+
+
+
 
 </footer>

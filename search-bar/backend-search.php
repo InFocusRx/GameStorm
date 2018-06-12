@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "csrizzle_GameStorm");
+$link = mysqli_connect("d70750.mysql.zonevs.eu", "d70750sa176992", "DHjb464w", "d70750_store");
  
 // Check connection
 if($link === false){

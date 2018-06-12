@@ -1,0 +1,80 @@
+
+    .search-box{
+        width: 300px;
+        position: absolute;
+        left: -220px;
+
+        font-size: 14px;
+    }
+    .search-box input[type="text"]{
+        height: 32px;
+        padding: 10px 10px;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+    }
+    .result{
+        position: absolute;        
+        z-index: 999;
+        background-color: white;        
+        top: 100%;
+    }
+    .search-box input[type="text"], .result{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .result p{
+        margin-top: 5px;
+        padding: 7px 10px;
+        /*border: 1px solid #CCCCCC;*/
+        border: 1px solid #CCCCCC;
+        border-top: none;
+        cursor: pointer;
+    }
+    .result p:hover{
+        background-color: #f2f2f2;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+@media only screen and (max-width: 768px){
+    .search-box input[type="text"], .result{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .search-box{
+        width: 300px;
+        position: absolute;
+        left: 2%;
+        top: 3%;
+
+        font-size: 16px;
+    }             
+}
+@media only screen and (max-width: 375px){
+    .search-box input[type="text"], .result{
+        width: 70%;
+        box-sizing: border-box;
+    }   
+    .search-box{
+        width: 300px;
+        position: absolute;
+        left: 20%;
+        top: 3%;
+
+        font-size: 16px;
+    }           
+}
+@media only screen and (max-width: 320px){
+    .search-box input[type="text"], .result{
+        width: 70%;
+        box-sizing: border-box;
+    }
+    .search-box{
+        width: 300px;
+        position: absolute;
+        left: 20%;
+        top: 3%;
+
+        font-size: 16px;
+    }    
+}
