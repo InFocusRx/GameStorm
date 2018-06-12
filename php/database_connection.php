@@ -1,13 +1,11 @@
 <?php
 
+  $servername = "d70750.mysql.zonevs.eu";
+  $dbuser = "d70750sa176992";
 
-  $servername = "localhost";
+  $dbpass = "DHjb464w";
 
-  $dbuser = "root";
-
-  $dbpass = "";
-
-  $dbname = "csrizzle_GameStorm";
+  $dbname = "d70750_store";
 
   $conn = new MySQLi($servername,$dbuser,$dbpass,$dbname);
 

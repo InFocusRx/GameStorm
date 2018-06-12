@@ -1,3 +1,22 @@
+
+.a{
+	transition: all .3s ease-in-out;
+	transform: scale(1.0);
+}
+.a:hover{
+	background-color: rgba(0,0,0,0.9);
+	color: #FFDF01;
+	border-radius: 5px;
+	padding: 1px 10px 1px 10px;
+    transform: scale(1.1);
+
+}
+
+
+.clicks{
+	text-decoration: none;
+	color: black;
+}
 .navbar-header{
 	background-color: black;
 	padding-bottom: 5px;
@@ -10,9 +29,11 @@ img{
 
 .navbar-header a{
 	color: white;
+	transition: all .2s ease-in-out;
 }
 .navbar-icons a:hover{
 	color: #FFDF01;
+	padding: 0px 10px 0px 0px;
 }
 
 .navbar-icons i{

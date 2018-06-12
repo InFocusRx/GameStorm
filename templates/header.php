@@ -1,3 +1,4 @@
+
 			<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			  <a href="#"><b style="color: orange;">GameStorm</b></a>
@@ -10,9 +11,7 @@
 			  <a href="#">FAQ</a>
 			  <a href="#">Story</a>
 				<br>
-			  <a href="#">Login</a>
-			  <a href="#">Search</a>
-			  	<br>
+		  	<br>
 
 			  	<table class="icons-mobile">
 			  		<tr>
@@ -31,7 +30,13 @@
 			</div>
 
 			<div class="mobile-m">
-				<span class="hamburger" onclick="openNav()">OPEN</span>
+				<span class="hamburger" onclick="openNav()"><i class="fas fa-bars" style="font-size: 36
+				px;"></i></span>
+
+						    <div class="search-box" style="display: none;">
+						        <input type="text" autocomplete="off" placeholder="Search game..." />
+						        <div class="result"></div>
+						    </div>				
 			</div>
 
 				
@@ -44,10 +49,10 @@
 					<div class="col-1"><a href="#"></a></div>
 					<div class="col-6"><a href="#"></a></div>
 					<div class="col-2 navbar-icons">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-vk"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a class="ic" href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+					<a class="ic" href="https://www.vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+					<a class="ic" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a class="ic" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
 					</div>
 
 				</div>
@@ -59,14 +64,18 @@
 			<section class="second-menu">
 				<div class="container">
 					<div class="row menu">
-						<div class="col-2"><a href="index.php">GAMESTORE</a></div>
-						<div class="col-1 rev">Reviews</div>
-						<div class="col-1"><a href="game-list.php">Games</a></div>
-						<div class="col-1">FAQ</div>
-						<div class="col-4">Story</div>
-						<div class="col-1">Search</div>
-						<div class="col-1"><a href="login.php">Login</a></div>
-						<div class="col-1">Cart</div>
+						<div class="col-2"><a href="index.php"><img src="img/logo.png" width="100%" alt="LOGO"></a></div>
+						<div class="col-1"><a class='a' href="game-list.php">Games</a></div>
+						<div class="col-1"><a class='a' href="faq.php">FAQ</a></div>
+						<div class="col-5"> </div>
+						<div class="col-1">
+						    <div class="search-box">
+						        <input type="text" autocomplete="off" placeholder="Search game..." />
+						        <div class="result"></div>
+						    </div>
+						</div>
+						<div class="col-1"><a href="login.php"> </a></div>
+						<div class="col-1"><a class='a' href="php/cart.php"><i class="fas fa-shopping-cart"></i> Cart </a></div>
 					</div>
 				</div>
-			</section>
+			</section>			
